@@ -1,0 +1,12 @@
+
+
+function setUpFootnotes() {
+	var notes = document.getElementsByClassName("note"); // footnotes list
+	for (var i = 0; i < notes.length; i++) {
+		alert(notes[i]);
+		notes[i].props.num = i+1;
+		alert(notes[i].props.num)
+	}
+}
+
+setUpFootnotes();
