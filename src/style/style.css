@@ -36,11 +36,20 @@ p {
 	font-family: georgia;
 }
 
+.outsideText {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;
+	left: auto;
+	right: auto;
+}
+
 .content {
 	font-family: georgia;
 	position: relative;
 	left: 450px;
-	max-width: 1140px;
+	max-width: 1000px;
 	right: 8%;
 	font-size: 25px;
 	line-height: 1.3;

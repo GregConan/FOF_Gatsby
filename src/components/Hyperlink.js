@@ -12,7 +12,7 @@ class Hyperlink extends Component {
     render() { 
         return (<span>
         <a href={this.props.to}
-         target="_blank" rel="noopener noreferrer">
+         target="_blank" rel="noopener">
             {this.props.children}
         </a></span>);
     }
