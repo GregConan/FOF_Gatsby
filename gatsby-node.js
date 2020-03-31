@@ -5,12 +5,13 @@
  */
 
 // You can delete this file if you're not using it
+/*
 const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src\\templates\\blogTemplate.js`)
+  //const blogPostTemplate = path.resolve(`src\\templates\\blogTemplate.js`)
 
   const result = await graphql(`
     {
@@ -43,3 +44,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+*/
