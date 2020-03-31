@@ -21,7 +21,7 @@ class Section extends Component {
             // Style elements in Section header and text, namely for centering        
             styleDict["marginLeft"] = "auto";
             styleDict["marginRight"] = "auto";
-            styleDict["maxWidth"] = "1000px";
+            styleDict["maxWidth"] = "1140px";
             return styleDict;
         }
 
