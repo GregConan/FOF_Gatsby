@@ -1,11 +1,7 @@
 /* Greg Conan
    The Fallacies of Faith
    Created 2019-05-06
-   Last Updated 2019-10-02 */
-
-$mdc-shape-small-component-radius: 4px;
-$mdc-shape-medium-component-radius: 4px;
-$mdc-shape-large-component-radius: 0px;
+   Last Updated 2020-01-11 */
 
 /* ======================================
    Sidebar
@@ -24,7 +20,6 @@ $mdc-shape-large-component-radius: 0px;
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	border:
 }
 
 #navbar.titleText {
@@ -32,112 +27,6 @@ $mdc-shape-large-component-radius: 0px;
 	color: #FFFFFF;
 	font-family: sans-serif;
 }
-
-/* ======================================
-   Sidebar
-====================================== */
-
-#sidebar {
-	color: white;
-	background-color: #222222;
-	height: 100%;
-	position: fixed;
-	width: 400px;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	font-family: sans-serif;
-}
-
-.titleText {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.header {
-	border-radius: 15px; 
-	display: table-cell;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-.red {
-	background-image: linear-gradient(to right, red, black);	
-}
-
-.blue {
-	background-image: linear-gradient(to right, blue, black);	
-}
-
-.green {
-	background-image: linear-gradient(to right, #7FFF00, black);	
-}
-
-.level1 {
-	width: 400px;
-}
-
-.level2 {
-	position: relative;
-	left: 25px;
-	width: 375px;
-	display: none;
-}
-
-.level3 {
-	position: relative;
-	left: 50px;
-	width: 350px;
-	display: none;
-}
-
-.headerText {
-	display: block;
-	line-height: 2px;
-	font-size: 16px;
-	position: relative;
-	left: 10px;
-	font-weight: bold;
-	color: #FFFFFF;
-	font-family: sans-serif;
-
-	/* Black border around text */
-	text-shadow: 1px 1px 0 #000,
-				-1px 1px 0 #000,
-				1px -1px 0 #000,
-				-1px -1px 0 #000,
-				0px 1px 0 #000,
-				0px -1px 0 #000,
-				-1px 0px 0 #000,
-				1px 0px 0 #000,
-				2px 2px 0 #000,
-				-2px 2px 0 #000,
-				2px -2px 0 #000,
-				-2px -2px 0 #000,
-				0px 2px 0 #000,
-				0px -2px 0 #000,
-				-2px 0px 0 #000,
-				2px 0px 0 #000,
-				1px 2px 0 #000,
-				-1px 2px 0 #000,
-				1px -2px 0 #000,
-				-1px -2px 0 #000,
-				2px 1px 0 #000,
-				-2px 1px 0 #000,
-				2px -1px 0 #000,
-				-2px -1px 0 #000;	
-}
-
-#sidebar.headerText {
-	text-align: left;
-}
-
-.headerBr {
-	display: block;
-	margin: 1px 0;
-}
-
 
 /* ======================================
    Content
@@ -186,7 +75,6 @@ img {
 	position: relative;
 	left: -1em;
 }
-
 
 /* ======================================
    Citations/Footnotes

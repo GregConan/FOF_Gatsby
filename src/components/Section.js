@@ -30,38 +30,18 @@ class Section extends Component {
 
         const textStyle = {
             display: this.state.shown ? "block" : "none",
-        }
+        };
 
         return (
         <div>
             <div id={this.props.id} style={containerStyle} onClick={this.toggleShown}> 
-                <p>{this.props.summary}</p>
+                <p>{this.props.num}. {this.props.summary}</p>
             </div>
-            <br />
             <div style={textStyle}>
                 {this.props.children}
             </div>
         </div>     
         )
-
-        /*
-        return ( 
-            <div>
-                <div id={this.props.id} style={containerStyle} onClick={this.toggleShown}> 
-                    <p style={textStyle}>{this.props.text}</p>
-                </div><p className = "headerBr" />
-            </div>
-        );
-        
-        return (
-            <div>
-                <div id = "{this.props.id}" class = "header level{this.props.level} {this.props.color}" onclick = "toggleShown(this.id);">
-                    <p className = "headerText" >{this.props.headerText}</p>
-                    <p>TEST to show that sidebarHeader component works</p>
-                </div><p className = "headerBr"  /> 
-            </div>
-        )
-        */
     }
 }
 

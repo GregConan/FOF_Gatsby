@@ -21,6 +21,7 @@ class Note extends Component {
             zIndex: 5,
             position: "relative",
             minWidth: "300px",
+            // minWidth: "100%"
         };
         const noteNumStyle = {
             display: this.state.shown ? "none" : "inline-block",
@@ -38,12 +39,42 @@ class Note extends Component {
                 <span className="notetext"
                 style={noteStyle}
                 >
-                    <strong>{this.props.num}. </strong>
+                    <strong>Note {this.props.num}. </strong>
                     {this.props.children}
                 </span>
             </span>
         )
     }
 }
+
+/*
+.note {
+	display: inline-block; 
+	color: blue;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 4;
+	
+	// Superscript 
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
+        };
+        const noteNumStyle = {
+            display: this.state.shown ? "none" : "inline-block",
+            zIndex: 4,
+            position: "relative",
+            color: "blue",
+            fontWeight: "bold",
+            cursor: "pointer",
+            
+            // Superscript 
+            verticalAlign: "super",
+            fontSize: "0.5em" 
+        };
+
+
+*/
 
 export default Note;
