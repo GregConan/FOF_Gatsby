@@ -16,7 +16,16 @@ class Section extends Component {
     }
 
     render() { 
-        const containerStyle = {
+        
+        function addPositioning(styleDict) {    
+            // Style elements in Section header and text, namely for centering        
+            styleDict["marginLeft"] = "auto";
+            styleDict["marginRight"] = "auto";
+            styleDict["maxWidth"] = "1000px";
+            return styleDict;
+        }
+
+        const containerStyle = addPositioning({
             backgroundImage: "linear-gradient(to right, #EEC1FF, white)",
             borderStyle: "solid",
             borderRadius: "15px", 
@@ -26,11 +35,11 @@ class Section extends Component {
             padding: "10px",
             fontWeight: "bold",
             fontFamily: "sans-serif",
-        };
+        });
 
-        const textStyle = {
+        const textStyle = addPositioning({
             display: this.state.shown ? "block" : "none",
-        };
+        });
 
         return (
         <div>

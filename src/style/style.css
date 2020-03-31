@@ -36,6 +36,15 @@ p {
 	font-family: georgia;
 }
 
+.outsideText {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;
+	left: auto;
+	right: auto;
+}
+
 .content {
 	font-family: georgia;
 	position: relative;
@@ -49,10 +58,9 @@ p {
 
 img {
 	display: block;
-	max-width: 1000px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
 }
 
 .hidden {
