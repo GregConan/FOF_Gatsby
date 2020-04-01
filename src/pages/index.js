@@ -15,6 +15,7 @@ function render() {
 	var sections = 0;
 	return (
 		<Layout>
+		<SEO title="The Fallacies of Faith: Main Page" />
 		<blockquote><em>"All we can do is to follow the truth and not fight against it."</em>
 		<br />—2 Corinthians 13:8 (CEV)</blockquote>
 		This website is a work-in-progress counter-apologetics resource. Its intent is to provide a factually accurate, logically coherent, and intellectually honest set of arguments that fundamental Christian doctrine as defined in the <Hyperlink to="https://www.crcna.org/welcome/beliefs/creeds">traditional</Hyperlink> <Hyperlink to="https://els.org/beliefs/the-three-ecumenical-creeds-2/">Christian creeds</Hyperlink> should not be believed. In this document, I have sought to address every pro-Christian argument that I have ever encountered.
@@ -54,9 +55,9 @@ function render() {
 			</tr><tr>
 				<td><Link to="./cos-aquinas">Aquinas' Cosmological Argument</Link></td>
 			</tr><tr>
-				<td></td>
+				<td><Link to="./cos-schroeder">Gerald Schroeder's Cosmological Argument</Link></td>
 			</tr><tr>
-				<td>Leibniz's Cosmological Argument</td>
+				<td><Link to="./cos-leibniz">Leibniz's Cosmological Argument</Link></td>
 			</tr><tr>
 				<td rowspan="2">Teleological Arguments</td>
 				<td></td>
@@ -84,7 +85,7 @@ function render() {
 			</tr><tr>
 				<td>Godel's Ontological Argument</td>
 			</tr><tr>
-				<td rowspan="4">Theology</td>
+				<td rowspan="5">Theology</td>
 				<td rowspan="3">Theodicy</td>
 				<td rowspan="3">Problems of Evil</td>
 				<td rowspan="3"></td>
@@ -94,13 +95,14 @@ function render() {
 			</tr><tr>
 				<td>The Problem of Sin</td>
 			</tr><tr>
-				<td>God's Nature</td>
-				<td>The Trinity</td>
-				<td><Link to="/logic-contra">
+				<td rowspan="2">God's Nature</td>
+				<td rowspan="2">The Trinity</td>
+				<td rowspan="2"><Link to="/logic-contra">
 					Against Contradictions
 				</Link></td>
-				<td>Trinitarian Contradictions</td>
-				<td></td>
+				<td>Early Trinitarian Theology</td>
+			</tr><tr>
+				<td><Link to="./trinity-modern">Modern Scientific Trinity Analogies</Link></td>
 			</tr><tr>
 				<td>Philosophy of Mind</td>
 				<td>Personal Identity</td>
