@@ -25,68 +25,92 @@ function render() {
 			<tr>
 				<th>Field</th>
 				<th>Topic</th>
+				<th>Arguments</th>
 				<th>Basis</th>
 				<th>Application</th>
 			</tr><tr>
+				<td>Language</td>
 				<td>Semantics</td>
 				<td>Definition Disagreements</td>
 				<td>Defining Meaning</td>
 				<td>Defining "Atheism," "Faith," etc.</td>
 			</tr><tr>
-				<td>Cognitive Epistemology</td>
-				<td>Against Reformed Epistemology</td>
-				<td><Link to="./cognitive-bias">Cognitive Biases</Link></td>
+				<td>Psychological Epistemology</td>
+				<td>Skepticism</td>
+				<td>Reformed Epistemology</td>
+				<td><Link to="./cognitive-bias">Avoiding Cognitive Biases</Link></td>
 				<td></td>
 			</tr><tr>
-				<td rowspan="7">Metaphysics</td>
+				<td rowspan="11">Metaphysics</td>
 			</tr><tr>
-				<td rowspan="2">Existence and Essence</td>
-				<td></td>
-				<td></td>
+				<td rowspan="5">Time and Space</td>
+				<td rowspan="4">Cosmological Arguments</td>
+				<td rowspan="4">
+					<Link to="./time-relative">Relative Time</Link>
+					<br /><br />
+					Absolute Time
+				</td>
+				<td><Link to="./cos-craig">William Lane Craig's Kalam Cosmological Argument</Link></td>
+			</tr><tr>
+				<td><Link to="./cos-aquinas">Aquinas' Cosmological Argument</Link></td>
 			</tr><tr>
 				<td></td>
-				<td></td>
 			</tr><tr>
-				<td rowspan="2">Against Ontological Arguments</td>
-				<td><Link to="./possible-metaphys">Metaphysical Modality</Link></td>
+				<td>Leibniz's Cosmological Argument</td>
+			</tr><tr>
+				<td rowspan="2">Teleological Arguments</td>
+				<td></td>
+				<td>The Fine-Tuning Argument</td>
+			</tr><tr>
+				<td rowspan="3">Existence and Essence</td>
+				<td></td>
+				<td>Aquinas' Teleological Argument</td>
+			</tr><tr>
+				<td rowspan="4">Ontological Arguments</td>
+				<td rowspan="2"></td>
 				<td><Link to="./ont-anselm">Anselm's Ontological Argument</Link></td>
 			</tr><tr>
-				<td><Link to="./possible-worlds">Possible Worlds Semantics
-				</Link></td>
-				<td></td>
+				<td>Descartes's Ontological Argument</td>
 			</tr><tr>
-				<td rowspan="2">Against Cosmological Arguments</td>
-				<td><Link to="./time-relative">
-					Relative Time</Link></td>
-				<td></td>
+				<td rowspan="2">Possibility and Necessity</td>
+				<td rowspan="2">
+					<Link to="./possible-metaphys">Against Metaphysical Modality</Link>
+					<br /><br />
+					<Link to="./possible-worlds">Against 'Possible Worlds'</Link>
+				</td>
+				<td>
+					<Link to="./ont-plantinga">Plantinga's Ontological Argument</Link>
+				</td>
 			</tr><tr>
-				<td>Absolute Time</td>
-				<td></td>
+				<td>Godel's Ontological Argument</td>
 			</tr><tr>
 				<td rowspan="4">Theology</td>
+				<td rowspan="3">Theodicy</td>
 				<td rowspan="3">Problems of Evil</td>
-				<td></td>
+				<td rowspan="3"></td>
 				<td>Divine Hiddenness</td>
 			</tr><tr>
-				<td></td>
 				<td>The Problem of Suffering</td>
 			</tr><tr>
-				<td></td>
 				<td>The Problem of Sin</td>
 			</tr><tr>
 				<td>God's Nature</td>
+				<td>The Trinity</td>
 				<td><Link to="/logic-contra">
 					Against Contradictions
 				</Link></td>
-				<td>Trinitarian Contradictions</td>				<td></td>
+				<td>Trinitarian Contradictions</td>
+				<td></td>
 			</tr><tr>
 				<td>Philosophy of Mind</td>
 				<td>Personal Identity</td>
 				<td></td>
 				<td></td>
+				<td></td>
 			</tr><tr>
 				<td rowspan="2">Demographics</td>
 				<td rowspan="2">Christianity's Future</td>
+				<td rowspan="2">Secularization Theory</td>
 				<td><Link to="/demographics-usa">
 					American Religious Demographic Trends
 				</Link></td>

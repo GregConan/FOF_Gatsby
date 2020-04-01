@@ -53,7 +53,7 @@ const ExplainingDemographicsUSA = () => (
         </Hyperlink>
         The rise of access to information is slowly choking American Christianity to death. 
     </Section>
-    <Section num={++sections} summary="Drift theory">
+    <Section num={++sections} summary="Americans who are raised nonreligious are much less likely to become religious when they grow older, so the rise of the 'nones' is to some degree self-perpetuating.">
         <Hyperlink to="https://www.technologyreview.com/s/526111/how-the-internet-is-taking-away-americas-religion/">25% of the decline in American religious affiliation is explained by fewer Americans having a religious upbringing</Hyperlink>, Allen Downey found, neatly fitting what Evan Stewart called <Hyperlink to="http://hdl.handle.net/11299/206620">"drift theory"</Hyperlink>: 
         <br /><br />
         <blockquote>
@@ -61,9 +61,14 @@ const ExplainingDemographicsUSA = () => (
             <Note num={++notes}><Hyperlink to="http://hdl.handle.net/11299/206620">Stewart (2019)</Hyperlink>, p. 3.
             </Note>
         </blockquote>
+        Per <Hyperlink to="https://fivethirtyeight.com/features/the-christian-right-is-helping-drive-liberals-away-from-religion/">FiveThirtyEight</Hyperlink>:
+        <br /><br />
+        <blockquote>
+        “[S]ecular liberals are more likely than moderates or conservatives to have spouses who aren’t religious. That’s critical because these couples are then often less likely to pray or send their children to Sunday school, and research shows that <Hyperlink to="https://www.jstor.org/stable/3511333?seq=1#page_scan_tab_contents">formative</Hyperlink> <Hyperlink to="https://psycnet.apa.org/record/1983-07799-001">religious</Hyperlink> <Hyperlink to="https://www.jstor.org/stable/1386039?seq=1#page_scan_tab_contents">experiences</Hyperlink> as a child play a crucial role in structuring an adult’s religious beliefs and identity...It’s very, very unlikely that a kid raised in a nonreligious liberal household would suddenly consider going to church.”
+        </blockquote>
         The less that Americans are taught to follow their religion as children, before the development of their critical thinking skills, the fewer of them ever come to believe it.
     </Section>
-    <Section num={++sections} summary="American liberals have increasingly left religion behind as an act of political backlash to the merging of American Christianity with right-wing and Republican politics.">
+    <Section num={++sections} summary="American liberals have increasingly left religion behind as an act of political backlash against American Christianity merging with right-wing and Republican politics.">
         <blockquote>
             “<em>I’d argue that the compromises and unholy alliances Christians have made in pursuit of converting the culture has left many more suspicious of and hardened to the message of the church. And I don’t blame them.</em>”
             <br />
