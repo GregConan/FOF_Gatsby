@@ -36,6 +36,18 @@ p {
 	font-family: georgia;
 }
 
+#menu {
+	word-wrap: break-word;
+	border-collapse: "collapse";
+	padding: 0 0;
+}
+
+#menu tr td {
+	height: 5em;
+	width: 10em;
+	padding: 0 0;
+}
+
 .outsideText {
 	max-width: 1000px;
 	margin-left: auto;
