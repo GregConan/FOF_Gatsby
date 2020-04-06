@@ -46,7 +46,7 @@ function render() {
 							<td rowspan="5">
 								<MenuButton text="Relative Time" to="./time-relative" />
 								<br /><br />
-								Absolute Time
+								<MenuButton text="Absolute Time" to="./time-absolute" />
 							</td>
 						</tr>
 						<MenuButtonRow text="Thomas Aquinas" to="./cos-aquinas" />
@@ -58,13 +58,21 @@ function render() {
 				<td><DropdownMenu title="Trinitarian Theology"
 						col1="Objection Basis" col2="Arguments"
 					>
-						<tr><td>
-							<MenuButton text="Against Contradictions" to="./logic-contra" />
-						</td><td>
-							<MenuButton text="Modern Scientific Trinity Analogies" to="./trinity-modern" />							
-						</td></tr>
+						<tr>
+							<td>
+								<MenuButton text="Against Contradictions" to="./logic-contra" />
+							</td><td>
+								<MenuButton text="The Trinity is a Contradiction" to="./trinity-ancient" />							
+							</td>
+						</tr><tr>
+							<td>
+								
+							</td><td>
+								<MenuButton text="Modern Scientific Trinity Analogies" to="./trinity-modern" />
+							</td>
+						</tr>
 					</DropdownMenu>
-					</td>
+				</td>
 				<td><DropdownMenu title="Religious Demographic Trends Over Time"
 						col1="Location/Scale" col2="Explanation"
 					>

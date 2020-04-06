@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Hyperlink from "../components/Hyperlink"
 import Section from "../components/Section"
 import Note from "../components/Note"

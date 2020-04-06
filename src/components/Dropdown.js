@@ -31,9 +31,12 @@ class Dropdown extends Component {
     const buttonStyle = {
         display: this.state.shown ? "none" : "flex", // "inline-block",
         zIndex: 4,
-        position: "absolute",
+        position: "relative",
         wordWrap: "break-word",
-        minWidth: "12em"
+        minWidth: "100%",
+        minHeight: "100%",
+        textAlign: "center",
+        verticalAlign: "center"
     };
     const dropdownContentStyle = {
         display: this.state.shown ? "flex" : "none",
@@ -51,11 +54,9 @@ class Dropdown extends Component {
         // onPointerEnter={this.onEnter}
         // onPointerLeave={this.onLeave}
         >
-            <div style={{position: "absolute"}}>
-                <button style={buttonStyle}>
-                    {this.props.text}
-                </button>
-            </div>
+            <button style={buttonStyle}>
+                {this.props.text}
+            </button>
             <span style={dropdownContentStyle}>
                 {this.props.children}
             </span>
