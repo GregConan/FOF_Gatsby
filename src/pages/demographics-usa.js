@@ -12,6 +12,7 @@ import Section from "../components/Section"
 // Images
 import gssReligion from "../images/gss-religion.png"
 import pewReligiousLandscape from "../images/pew-religious-landscape.png"
+import gallupReligion from "../images/Gallup-Religion-1950-2050.png"
 
 var notes = 0;
 var sections = 0;
@@ -40,12 +41,9 @@ const DemographicsUSA = () => (
         <br /><br />
         <Hyperlink to="http://sociology.berkeley.edu/sites/default/files/faculty/fischer/Hout%20et%20al_No%20Relig%20Pref%202012_Release%20Mar%202013.pdf" archived="hide">
           <img src={gssReligion} /></Hyperlink>
-        Gallup probably has the most data on the <Hyperlink to="https://news.gallup.com/poll/1690/religion.aspx">long-term decline of American Christianity:</Hyperlink>
+        Gallup probably has the most data on the <Hyperlink to="https://news.gallup.com/poll/1690/religion.aspx">long-term decline of American Christianity:
         <br /><br />
-        <Hyperlink to="https://news.gallup.com/poll/117409/easter-smaller-percentage-americans-christian.aspx" archived="hide">
-          <img src = "https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/r23235jxbuuc7z7_ywneqq.gif" /></Hyperlink>
-        <Hyperlink to="https://news.gallup.com/poll/128276/Increasing-Number-No-Religious-Identity.aspx" archived="hide">
-          <img src = "https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/zkhxmzvbekozvpl6obartg.gif" /></Hyperlink>
+        <img src={gallupReligion} /></Hyperlink><br />
       </Section>
       <Section num={++sections} summary="American religious belief and behavior have declined alongside religious identification, as Gallup has consistently shown, so Americans are not simply becoming less fond of Christian organizations. Americans are increasingly abandoning religion entirely.">
         Americans, as Gallup has shown, increasingly see religion as “<Hyperlink to="https://news.gallup.com/poll/128276/Increasing-Number-No-Religious-Identity.aspx">largely old-fashioned and out of date,</Hyperlink>”:
