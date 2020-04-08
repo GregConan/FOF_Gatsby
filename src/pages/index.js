@@ -43,16 +43,18 @@ function render() {
 						col1="Objection Basis" col2="Argument By"
 					>
 						<tr>
-							<td rowspan="5">
-								<MenuButton text="Relative Time" to="./time-relative" />
-								<br /><br />
-								<MenuButton text="Absolute Time" to="./time-absolute" />
-							</td>
+							<td><MenuButton text="Relative Time" to="./time-relative" /></td>
+							<td><MenuButton text="Thomas Aquinas" to="./cos-aquinas" /></td>
+						</tr><tr>
+							<td><MenuButton text="Absolute Time" to="./time-absolute" /></td>
+							<td><MenuButton text="William Lane Craig" to="./cos-craig" /></td>
+						</tr><tr>
+							<td></td>
+							<td><MenuButton text="Gottfried Leibniz" to="./cos-leibniz" /></td>
+						</tr><tr>
+							<td></td>
+							<td><MenuButton text="Gerald Schroeder" to="./cos-schroeder" /></td>
 						</tr>
-						<MenuButtonRow text="Thomas Aquinas" to="./cos-aquinas" />
-						<MenuButtonRow text="William Lane Craig" to="./cos-craig" />
-						<MenuButtonRow text="Gottfried Leibniz" to="./cos-leibniz" />
-						<MenuButtonRow text="Gerald Schroeder" to="./cos-schroeder" />
 					</DropdownMenu>
 				</td>
 				<td><DropdownMenu title="Trinitarian Theology"
@@ -65,9 +67,8 @@ function render() {
 								<MenuButton text="The Trinity is a Contradiction" to="./trinity-ancient" />							
 							</td>
 						</tr><tr>
+							<td></td>
 							<td>
-								
-							</td><td>
 								<MenuButton text="Modern Scientific Trinity Analogies" to="./trinity-modern" />
 							</td>
 						</tr>
@@ -90,16 +91,50 @@ function render() {
 						col1="Objection Basis" col2="Argument By"
 					>
 						<tr>
-							<td rowspan="5">
-								<MenuButton text="Metaphysical Modality" to="./possible-metaphys" />
-								<br /><br />
-								<MenuButton text="Possible Worlds" to="./possible-worlds" />
-							</td>
-						</tr><MenuButtonRow text="Anselm of Canterbury" to="./ont-anselm" />
-						<MenuButtonRow text="Rene Descartes" to="./ont-descartes" />
-						<MenuButtonRow text="Kurt Godel" to="./ont-godel" />
-						<MenuButtonRow text="Alvin Plantinga" to="./ont-plantinga" />
+							<td></td>
+							<td><MenuButton text="Anselm of Canterbury" to="./ont-anselm" /></td>
+						</tr><tr>
+							<td></td>
+							<td><MenuButton text="Rene Descartes" to="./ont-descartes" /></td>
+						</tr><tr>
+							<td><MenuButton text="Metaphysical Modality" to="./possible-metaphys" /></td>
+							<td><MenuButton text="Kurt Godel" to="./ont-godel" /></td>
+						</tr><tr>
+							<td><MenuButton text="Possible Worlds" to="./possible-worlds" /></td>
+							<td><MenuButton text="Alvin Plantinga" to="./ont-plantinga" /></td>
+						</tr>
 					</DropdownMenu></td>
+				<td></td>
+				<td></td>
+			</tr><tr>
+				<td></td>
+				<td><DropdownMenu title="Contingency ('Everything Has a Reason') Arguments"
+						col1="Objection Basis" col2="Argument By"
+					>
+						<tr>
+							<td></td>
+							<td><MenuButton text="Gottfried Leibniz" to="./con-leibniz" /></td>
+						</tr><tr>
+							<td></td>
+							<td><MenuButton text="Cameron Bertuzzi" to="./con-bertuzzi" /></td>
+						</tr>
+					</DropdownMenu></td>
+				<td></td>
+				<td></td>
+			</tr><tr>
+				<td></td>
+				<td><DropdownMenu title="Other Metaphysical Arguments"
+						col1="Objection Basis" col2="Argument Name"
+					>
+						<tr>
+							<td></td>
+							<td><MenuButton text="The Moral Argument" to="./moral" /></td>
+						</tr><tr>
+							<td></td>
+							<td><MenuButton text="The Transcendental Argument" to="./transcendental" /></td>
+						</tr>
+					</DropdownMenu>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -130,8 +165,6 @@ function render() {
 			<li>Psychology of Religion</li>
 			<li>My Personal Story</li>
 		</ul>
-		For the moment, the style of this website is strongly influenced by a <Hyperlink to="https://beliefmap.org/">fantastic online Christian apologetics resource called BeliefMap</Hyperlink> by Blake Giunta. My apologies to Mr. Giunta for imitating so many aspects of his website's style, and if the resemblance is too strong, hopefully I can make this website's style more unique in the future.
-		<br /><br />
 		</Section>
 	</Layout>);
 } /* <Sidebar /> */
