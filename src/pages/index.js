@@ -81,7 +81,7 @@ function render() {
 						<td><MenuButton text="The United States" to="./demographics-usa" /></td>
 						<td><MenuButton text="American Secularization" to="./demographics-usa-explained" /></td>
 					</tr><tr>
-						<td><MenuButton text="Global Religion" to="./ont-anselm" /></td>
+						<td><MenuButton text="Global Religion" to="./demographics-world" /></td>
 					</tr>
 					</DropdownMenu>
 				</td>
