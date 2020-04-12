@@ -12,6 +12,10 @@ var sections = 0;
 const CosLeibniz = () => (
   <Layout>
     <SEO title="Gottfried Leibniz's Cosmological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <p>According to Gottfried Leibniz, "<Hyperlink to="https://reasonabletheology.org/why-is-there-something-rather-than-nothing-leibniz-contingency-argument/">the first question that should rightly be asked is 'Why is there something instead of nothing?'</Hyperlink>" It is a simple question to which Leibniz considered God the only possible answer. But asking why there is something rather than nothing is insufficient to show that God exists.</p>
     <Section num={++sections} summary="Why is there something rather than nothing? Well, why not? There is no reason to expect nothing rather than something, and maybe the universe has no explanation. Plus, if probability is based on observations, 1 out of 1 observed universes exists.">
         A much simpler answer to Leibniz's question is given without invoking God in the first three words of the Stanford Encyclopedia of Philosophy's discussion of Leibniz's question: "<Hyperlink to="https://plato.stanford.edu/entries/nothingness/#WhyTheSomRatThaNot">Well, why not?</Hyperlink>"
@@ -80,6 +84,6 @@ const CosLeibniz = () => (
         However, I am unwilling to endorse that argument because it requires accepting "metaphysical possibility" as a legitimate category, separate from logical or physical possibility. As explained earlier, I do not. 
     </Section>			
   </Layout>
-)
+);
 
 export default CosLeibniz;

@@ -12,6 +12,10 @@ var sections = 0;
 const ConBertuzzi = () => (
   <Layout>
     <SEO title="Cameron Bertuzzi's Contingency Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
 		<p>Cameron Bertuzzi of "Capturing Christianity" described an "<Hyperlink to="http://capturingchristianity.com/updated-contingency-argument/">updated contingency argument</Hyperlink>" using modal logic which attempted to avoid many of the problems with Leibniz's. Note that "L" is defined as "the set of all concrete objects in the actual world," which will become crucial when deconstructing Bertuzzi's argument. Anyway, he presented his argument as the following syllogism:</p>
 		<blockquote><ol>
             <li>"Necessarily, every set of contingent concrete objects possibly has an explanation for why it, rather than some other set of objects, exists.</li>

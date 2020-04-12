@@ -14,6 +14,10 @@ var sections = 0;
 const MetaphysicalModality = () => (
   <Layout>
     <SEO title="Metaphysical Modality" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     In philosophy, "modal claims" are "<Hyperlink to="https://plato.stanford.edu/entries/modality-epistemology/">claims about what is necessary, possible, contingent, essential, and accidental."</Hyperlink><Note num={++notes}>By "modality" here I mean "<Hyperlink to="https://en.wikipedia.org/wiki/Alethic_modality">alethic modality</Hyperlink>," also known as "<Hyperlink to="https://en.wikipedia.org/wiki/Subjunctive_possibility">subjunctive possibility</Hyperlink>." There are other kinds of modality, including the <Hyperlink to="https://en.wikipedia.org/wiki/Subjunctive_possibility#Deontic_possibility">deontic ethical modality</Hyperlink> of obligatory (ethically necessary) versus permissible (ethically possible) actions. For this discussion, I am ignoring these other modalities.</Note> Philosophers often define three kinds<Note num={++notes}>For the moment I am ignoring a fourth kind, <Hyperlink to="https://en.wikipedia.org/wiki/Subjunctive_possibility#Types_of_subjunctive_possibility">"temporal" or "historical" modality</Hyperlink>.</Note> of modality: logical, metaphysical, and physical. "On the standard model" of modality, "the following nesting relation holds:" 
     <br />
     <img src = "https://plato.stanford.edu/entries/modality-epistemology/fig1.png" style={{objectFit: "scale-down"}} />

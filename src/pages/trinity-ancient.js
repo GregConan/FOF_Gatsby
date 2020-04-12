@@ -11,6 +11,10 @@ var sections = 0;
 const TrinityAncient = () => (
   <Layout>
     <SEO title="Ancient Trinitarian Theology" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
         <Section num={++sections} summary="Christian doctrine (per the Athanasian Creed) says that the Father is God, the Son is God, the Holy Spirit is God. But it also says that these are three distinct persons, so the Son is not the Holy Spirit. Without a clear alternative interpretation, this doctrine is self-contradictory.">
             Fundamental Christian doctrine has been formalized in a set of creeds. Since <Hyperlink to="www.crcna.org/welcome/beliefs/creeds/athanasian-creed">the Athanasian Creed was the first to establish the doctrine of the Trinity</Hyperlink>, I will list all relevant statements from the Athanasian Creed about the Trinity:
             <br /><br /><ul>

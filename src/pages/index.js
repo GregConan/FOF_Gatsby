@@ -8,7 +8,6 @@ import Image from "../components/image"
 import Note from "../components/Note"
 import SEO from "../components/seo"
 import Section from "../components/Section"
-import Sidebar from "../components/Sidebar"
 import DropdownMenu from "../components/DropdownMenu"
 import MenuButton from "../components/MenuButton"
 import MenuButtonRow from "../components/MenuButtonRow"
@@ -19,6 +18,10 @@ function render() {
 	return (
 		<Layout>
 		<SEO title="The Fallacies of Faith: Main Page" />
+		<script>
+			{notes = 0}
+			{sections = 0}
+		</script>    
 		<blockquote><em>"All we can do is to follow the truth and not fight against it."</em>
 		<br />—2 Corinthians 13:8 (CEV)</blockquote>
 		This website is a work-in-progress counter-apologetics resource. Its intent is to provide a factually accurate, logically coherent, and intellectually honest set of arguments that fundamental Christian doctrine as defined in the <Hyperlink to="https://www.crcna.org/welcome/beliefs/creeds">traditional</Hyperlink> <Hyperlink to="https://els.org/beliefs/the-three-ecumenical-creeds-2/">Christian creeds</Hyperlink> should not be believed. In this document, I have sought to address every pro-Christian argument that I have ever encountered.

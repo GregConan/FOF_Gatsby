@@ -17,6 +17,10 @@ var sections = 0;
 const ExplainingDemographicsUSA = () => (
   <Layout>
     <SEO title="Explaining American Religious Demographic Trends" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     The rise of American nonreligion is typically explained in the literature by one of two overarching theories: the <Hyperlink to="http://hdl.handle.net/11299/206620">"backlash theory" and the "drift theory."</Hyperlink><Note num={++notes}>Evan Stewart (2019), "<Hyperlink to="http://hdl.handle.net/11299/206620">No Church in the Wild: The Politics of American Nonreligion</Hyperlink>," pp. 2-3 (<Hyperlink to="https://conservancy.umn.edu/bitstream/handle/11299/206620/Stewart_umn_0130E_20445.pdf?sequence=1">PDF</Hyperlink>).
     </Note> Each of these partly explains the rise in American nonreligion, but another often-overlooked factor explains just as much: digital-age access to information. 
     <Section num={++sections} summary="The decline of American religion is caused largely by better access to information. The decline accelerated in the past few decades because Americans can access vastly more information now through the Internet.">
@@ -138,6 +142,6 @@ const ExplainingDemographicsUSA = () => (
         </blockquote>
         The less that Americans are taught to follow their religion as children, before the development of their critical thinking skills, the fewer of them ever come to believe it.
     </Section>
-</Layout>)
+</Layout>);
 
 export default ExplainingDemographicsUSA;

@@ -19,6 +19,10 @@ var sections = 0;
 const DemographicsUSA = () => (
   <Layout>
     <SEO title="American Religious Demographic Trends" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <blockquote>
         “<em><Hyperlink to="https://www.theatlantic.com/ideas/archive/2019/07/evangelical-christians-face-deepening-crisis/593353/">We’re losing an entire generation. They’re just gone. It’s one of the worst things to happen to the Church</Hyperlink></em>.”
         <br />
@@ -95,6 +99,6 @@ const DemographicsUSA = () => (
         
       </Section>
   </Layout>
-)
+);
 
 export default DemographicsUSA

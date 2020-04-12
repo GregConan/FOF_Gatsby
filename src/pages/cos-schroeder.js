@@ -14,6 +14,10 @@ var sections = 0;
 const CosSchoeder = () => (
   <Layout>
     <SEO title="Gerald Schroeder's Cosmological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
 		<p>A physicist named Gerald Schroeder apparently believed that he could provide <Hyperlink to="http://youtube.com/watch?v=eQVm8RokoBA">"scientific proof" that God exists</Hyperlink> — despite that science can never "prove" anything with certainty like mathematics or logic can, and can merely "show" or "demonstrate" — in five minutes, according to his Youtube video on the subject. Unsurprisingly, his five-minute "proof" is full of holes. One cannot infer that God exists merely because the laws of nature exist, contrary to what Schroeder claimed.</p>
     <Section num={++sections} summary="Since time is part of the universe, and nothing can predate time, the laws of nature do not predate the universe as Schroeder claimed.">
       Schroeder claimed (at 2:25) that "the Bible got it right" because "There was a beginning to the universe." In this respect he is correct: the Bible did get at least one thing right in a literal reading of it. However, he neglected to mention that the Bible incorrectly described almost every other detail about the beginning of the universe: namely, how long ago it happened, how long it took for the various kinds of life to form, through what processes the various kinds of life formed, whether or not there was a "firmament" above the Earth, whether stars existed before the Earth did, et cetera. It is commonly accepted based on the overwhelming majority of evidence that a literal reading of the Bible gives inaccurate answers to these questions.

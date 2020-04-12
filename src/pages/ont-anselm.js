@@ -13,6 +13,10 @@ var sections = 0;
 const AnselmOnt = () => (
   <Layout>
     <SEO title="Anselm's Ontological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <p>Anselm's ontological argument (AOA) for God's existence was first described in Anselm's <em><Hyperlink to="http://jasper-hopkins.info/proslogion.pdf">Proslogion</Hyperlink></em>:
     <br /><br /><blockquote>
         [I]s there, then, no such nature [as God], for the Fool has said in his heart that God does not exist? But surely when this very same Fool hears my words "something than which nothing greater can be thought," he understands what he hears ... So even the Fool is convinced that something than which nothing greater can be thought is at least in his understanding; for when he hears of this [being], he understands [what he hears], and whatever is understood is in the understanding. But surely that than which a greater cannot be thought cannot be only in the understanding. For if it were only in the understanding, it could be thought to exist also in reality—something which is greater [than existing only in the understanding]. Therefore, if that than which a greater cannot be thought were only in the understanding, then that than which a greater cannot be thought would be that than which a greater can be thought! But surely this [conclusion] is impossible. Hence, without doubt, something than which a greater cannot be thought exists both in the understanding and in reality.

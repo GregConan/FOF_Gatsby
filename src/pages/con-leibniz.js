@@ -12,6 +12,10 @@ var sections = 0;
 const ConLeibniz = () => (
   <Layout>
     <SEO title="Gottfried Leibniz's Contingency Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <p>Gottfried Leibniz's <Hyperlink to="https://rationalchristian.wordpress.com/2018/05/20/if-anything-exists-god-exists/">contingency argument is based on his so-called</Hyperlink> "<Hyperlink to="https://en.wikipedia.org/wiki/Principle_of_sufficient_reason">principle of sufficient reason</Hyperlink>" (PSR), which states that everything must have an explanation of its existence. According to the PSR, a thing's existence can be explained either by itself or by another thing. If it exists because of another thing, then its existence is <em>contingent</em> on that other thing, so it is said to <em>exist contingently</em>. Conversely, if its existence is self-explanatory, then it is said to <em>exist necessarily</em>. If it has no explanation at all — a possibility that the PSR denies — then its existence is a <em>brute fact.</em>
     <br /><br />
     Given the PSR, every contingent thing is explained by an ontologically prior thing. That prior thing exists either contingently, necessarily, or as a brute fact. This chain of things contingent on prior things is said to leave three respective possibilities. First, the chain extends backwards infinitely, so everything is contingent on a prior thing but there is no first thing. Second, something exists necessarily, so everything is indirectly contingent on it and it therefore explains everything. Finally, something exists as a brute fact. The last case is only a sufficient explanation if all contingent things are indirectly contingent on the brute fact(s). Anyone using the contingency argument rejects the first and third of those possibilities outright, concluding that the second must be correct.
@@ -112,6 +116,6 @@ const ConLeibniz = () => (
         I hesitate to endorse this objection for several other reasons. I would rather do away with metaphysical modality entirely, refusing to call anything metaphysically necessary or possible except to expose flaws in others' arguments. And even if one can use the language of metaphysical necessity, it may be an illicit move to say that existence exists necessarily, because perhaps the set of all existing things could simply be empty. But while this argument has its flaws, it would refute the PSR if one could show that existence exists necessarily and therefore requires no explanation.
     </Section>
   </Layout>
-)
+);
 
 export default ConLeibniz;

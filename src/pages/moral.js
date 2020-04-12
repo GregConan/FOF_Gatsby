@@ -12,6 +12,10 @@ var sections = 0;
 const MoralArg = () => (
   <Layout>
     <SEO title="William Lane Craig's Moral Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     In his debate with Lawrence Krauss, William Lane Craig phrased <Hyperlink to="https://www.reasonablefaith.org/media/debates/the-craig-krauss-debate-at-north-carolina-state-university#presentation-2">his moral argument for God's existence</Hyperlink> as follows:
     <br /><br /><blockquote>
         "On a naturalistic view moral values are just the byproduct of biological evolution and social conditioning … on the atheistic view there doesn’t seem to be anything about this that makes this morality objectively binding and true. But the problem is that objective moral values and duties plausibly do exist … There’s no more reason to deny the objective reality of moral values than the objective reality of the physical world … But in that case, the probability of God’s existence is 1.0! We can formulate this reasoning as follows: 1. If God did not exist, objective moral values and duties would not exist. 2. Objective moral values and duties do exist. From which it follows logically and inescapably that 3. Therefore, God exists."
@@ -53,4 +57,5 @@ const MoralArg = () => (
 		Notice that Dr. Craig implicitly recognizes that the objectivity of morality is based on essentialism instead of theism. He is able to successfully argue that God is objectively good only by presupposing that God has a universal essence, and not by appealing to some kind of distinction between theism and atheism. By admitting that actions are not good solely because God commands them, Craig also recognizes the possibility that Christianity is true and morality is subjective. If God exists but does not have the essential property of being good, as a Christian anti-essentialist must believe, then God exists but goodness is still subjective.
     </Section>
   </Layout>);
+  
 export default MoralArg;

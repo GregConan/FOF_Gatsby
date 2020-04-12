@@ -11,6 +11,10 @@ var sections = 0;
 const TrinityModern = () => (
   <Layout>
     <SEO title="Modern Scientific Analogies for the Trinity" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     Four Christians to whom I brought my argument that Trinitarian doctrine is contradictory and therefore should not be believed all gave the same kind of reply: analogies with scientific theories. They claimed that the most successful physical theories contain apparent contradictions, but still should be believed. They gave three examples of apparent contradictions in physics: The simultaneous truth of quantum mechanics (QM) and the theory of relativity, <Hyperlink to="https://en.wikipedia.org/wiki/Resonance_(chemistry)">resonance structures</Hyperlink> as an example of quantum superposition, and wave-particle duality.
     <Note num={++notes}>
         Here are the specific objections that each of those Christians gave me, although I have kept them anonymous because I am quoting from private correspondence:
@@ -51,6 +55,6 @@ const TrinityModern = () => (
         <br /><br />
         Finally, consider wave-particle duality. This will also depend on one's interpretation of quantum mechanics. For example, the <Hyperlink to="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality#2._Wave-only_view">many-worlds interpretation would probably claim that light is always only a wave</Hyperlink>, and <Hyperlink to="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality#1._Both-particle-and-wave_view">Bohmian mechanics would claim that light has wave-like and particle-like properties</Hyperlink>. As usual, there are plenty of interpretations that resolve the apparent contradictions — and the only reason the competing interpretations are still around is a lack of empirical predictions to test which one is correct. Since the apparent contradictions can be resolved, the only question is how to resolve them rightly. Also, the aforementioned Christians claimed that one can know <em>that</em> God is even if one cannot know <em>what</em> God is, and one of them supported this by making an analogy with light. But the analogy with light backfires. One can know <em>that</em> light is only because light is observable, unlike God.
     </Section>
-</Layout>)
+</Layout>);
 
 export default TrinityModern;

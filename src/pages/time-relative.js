@@ -4,10 +4,9 @@ import { Link } from "gatsby"
 // Components
 import Layout from "../components/layout"
 import Hyperlink from "../components/Hyperlink"
-import Image from "../components/image"
 import Note from "../components/Note"
 import SEO from "../components/seo"
-import Section from "../components/Section"
+import Section from "../components/Section" 
 
 // Images
 import theoriesOfTime from "../images/theories-of-time.png"
@@ -17,6 +16,10 @@ var sections = 0;
 const RelativeTime = () => (
   <Layout>
     <SEO title="Relative Time" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <Section num={++sections} summary="The many different theories of time disagree about whether the passage or 'flow' of a 'present moment' forward through time is real. Dynamic 'A-theories' call it objectively real, while static 'B-theories' call it a subjective illusion.">	
         Dr. William Lane Craig's "kalām cosmological argument" (KCA) is based on the idea that some things "begin to exist." To define what this means, Craig invoked the concept of "tensed facts," which <Hyperlink to="https://www.reasonablefaith.org/question-answer/P20/beginning-to-exist">presupposes a controversial metaphysical theory of time</Hyperlink>:
         <br /><br />

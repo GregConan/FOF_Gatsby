@@ -13,6 +13,10 @@ var sections = 0;
 const PlantingaOnt = () => (
   <Layout>
     <SEO title="Plantinga's Ontological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>    
     <p>Some Christian apologists have <Hyperlink to="https://www.reddit.com/r/DebateReligion/comments/5v4z11/parodies_of_the_modal_ontological_argument_do_not/">claimed that Alvin Plantinga's modal ontological argument (MOA) avoids the problems</Hyperlink> and absurdities of Anselm's, but whether it suffers from other problems remains to be seen:</p>
 		<blockquote><ol>
 			<li>"It is possible that a maximally great being exists. (It contains no logical contradiction of the sort, "married bachelor," or "square circle.")</li>
