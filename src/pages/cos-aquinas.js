@@ -12,6 +12,10 @@ var sections = 0;
 const CosAquinas = () => (
   <Layout>
     <SEO title="Saint Thomas Aquinas's Cosmological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>   
     <p>In a PragerU video, Peter Kreeft advanced a <Hyperlink to="https://www.prageru.com/videos/god-vs-atheism-which-more-rational">simplified form of Aquinas' argument from motion</Hyperlink>: 
     <br /><br />
     <blockquote>"[T]hings move. But nothing moves for no reason. Something must cause that movement. And whatever caused that, must be caused by something else, and so on. But this causal chain cannot go backwards forever. It must have a beginning. There must be an Unmoved Mover to begin all the motion in the universe: a first domino to start the whole chain moving, since mere matter never moves itself."

@@ -21,6 +21,13 @@ var sections = 0;
 const DemographicsWorld = () => (
 <Layout>
 <SEO title="Global Religious Demographics" />
+<script>
+	{notes = 0}
+	{sections = 0}
+</script>
+"Global membership in the [Christian] church has held steady for decades, but that is primarily due to growth in Africa making up for massive declines roughly everywhere else."
+<br />
+–Leon Thomas<Note num={++notes}>Leon Thomas ("<Hyperlink to="https://www.youtube.com/channel/UC9infsKo33_2LUoiqXGgQWg">Renegade Cut</Hyperlink>"), "<Hyperlink to="https://youtu.be/6d8K8KuDbVw?t=349">The Cool Pope Is Not Cool</Hyperlink>" timestamp 5:49</Note>
 <Section num={++sections} summary="Most industrialized countries have shown the same decline of religion as the United States, although theirs are closer to completion.">
 	European Christianity has declined far more than American Christianity, and in the near future it will continue declining. Although Christianity maintained hegemonic dominance of Europe and most of its cultures for nearly two millennia, if current trends continue, then by the end of this century barely half of Europeans will even be nominally Christian.
 	<br /><br />

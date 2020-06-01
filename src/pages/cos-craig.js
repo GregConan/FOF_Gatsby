@@ -12,6 +12,10 @@ var sections = 0;
 const CosCraig = () => (
   <Layout>
     <SEO title="William Lane Craig's Kalam Cosmological Argument" />
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>   
 		<p>Dr. William Lane Craig's most well-known argument is the "kalām cosmological argument" (KCA):
 		<ol>
 			<li>Whatever begins to exist has a cause.</li>

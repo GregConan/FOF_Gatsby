@@ -8,28 +8,31 @@ class Dropdown extends Component {
       super(props);
       this.state = {
           shown: false,
+          mouseIn: false
       };
 
   }
 
-  /*
-  onEnter = (e) => {
-    this.setState({shown: true});
-  }
+  // Show dropdown when user clicks button
+  onClicked = (e) => { this.setState({shown: true}); }
 
-  onLeave = (e) => {
-    this.setState({shown: false});
-  }
-  */
+  // Track whether the pointer is above this Dropdown element
+  changePointer = (e) => { this.setState({mouseIn: !this.state.mouseIn}) }
 
-  onClicked = (e) => {
-      this.setState({shown: !this.state.shown});
-      // this.style.display = this.state.shown ? "none" : "inline-block";
+  // Hide this Dropdown menu if user clicks outside of it
+  componentWillMount() {
+      document.addEventListener('mousedown', this.handleClick, false);
+  }
+  componentWillUnmount() {
+      document.removeEventListener('mousedown', this.handleClick, false);
+  }
+  handleClick = (e) => {
+    this.setState({shown: this.state.mouseIn});
   }
 
   render() { 
     const buttonStyle = {
-        display: this.state.shown ? "none" : "flex", // "inline-block",
+        display: this.state.shown ? "none" : "flex",
         zIndex: 4,
         position: "relative",
         wordWrap: "break-word",
@@ -48,11 +51,10 @@ class Dropdown extends Component {
         backgroundColor: "white",
     };
     
-
     return (
-        <span onClick={this.onClicked}
-        // onPointerEnter={this.onEnter}
-        // onPointerLeave={this.onLeave}
+        <span onClick={this.onClicked} 
+          onPointerEnter={this.changePointer}
+          onPointerLeave={this.changePointer}
         >
             <button style={buttonStyle}>
                 {this.props.text}

@@ -18,6 +18,10 @@ var notes = 0;
 var sections = 0;
 const CognitiveBias = () => (
   <Layout>
+    <script>
+        {notes = 0}
+        {sections = 0}
+    </script>
     <SEO title="Psychology of Cognitive Biases" />
     <blockquote>
     “<em>With remarkable ease, we form and sustain false beliefs. Led by our preconceptions, overconfident, persuaded by vivid anecdotes, perceiving correlations and control even where none may exist, we construct our social beliefs and then influence others to confirm them …

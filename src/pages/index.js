@@ -29,12 +29,14 @@ function render() {
 		For each argument that I have found in Christian apologetics, I have tried to find the best response using the ideas and terms of analytic philosophy. Each argument will have its own section in the "Application" section of the table below when this website is complete. The "Basis" section will contain all of the necessary underlying philosophical groundwork to justify the arguments I make in the "Application" section.
 		<br /><br />
 		<table id="menu" style={{width: "100%"}}>
+			<thead>
 			<tr>
 				<th>Cognitive Epistemology</th>
 				<th>Metaphysics</th>
 				<th>Theology</th>
 				<th>Sociology</th>
 			</tr>
+			</thead><tbody>
 			<tr>
 				<td><DropdownMenu title="Reformed Epistemology"
 					 	col1="Objection Basis" col2="Argument By"
@@ -140,7 +142,7 @@ function render() {
 				</td>
 				<td></td>
 				<td></td>
-			</tr>
+			</tr></tbody>
 		</table>
 		<br /><br />
 		<Section num={++sections} summary="Why is another atheist critique of Christian ideas needed?">

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../style/style.css';
+// import '../style/style.css';
 
 class Note extends Component {
 
@@ -17,28 +17,35 @@ class Note extends Component {
 
     render() { 
         const noteStyle = {
-            display: this.state.shown ? "inline-block" : "none",
+            display: this.state.shown ? "block" : "none",
             zIndex: 5,
             position: "relative",
             minWidth: "300px",
-            // minWidth: "100%"
+            padding: "30px 30px 30px 30px",
+            fontWeight: "normal",
+            color: "black",
+            borderRadius: "10px",
+            backgroundImage: "linear-gradient(to right, #e8f7ff, white)",
+            cursor: "pointer",
         };
         const noteNumStyle = {
             display: this.state.shown ? "none" : "inline-block",
             zIndex: 4,
-            position: "relative"
+            position: "relative",
+            fontWeight: "bold",
+            cursor: "pointer",
+            verticalAlign: "super",
+            fontSize: "0.5em"
         };
 
         return (
-            <span className="note"
-            onClick={this.toggleShown}
+            <span onClick={this.toggleShown}
             >
                 <span style={noteNumStyle}
-                >[{this.props.num}]</span>
-
-                <span className="notetext"
-                style={noteStyle}
-                >
+                 className="note"
+                >&nbsp;[{this.props.num}]</span>
+                
+                <span style={noteStyle}>
                     <strong>Note {this.props.num}. </strong>
                     {this.props.children}
                 </span>
@@ -48,32 +55,21 @@ class Note extends Component {
 }
 
 /*
-.note {
-	display: inline-block; 
-	color: blue;
-	font-weight: bold;
-	cursor: pointer;
-	z-index: 4;
-	
-	// Superscript 
-	vertical-align: super;
-	font-size: 0.5em;
+.note .notetext {
+	font-weight: normal;
+	color: black;
+	display: none;
+	font-size: 1.75em;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, #D9F1FF, white);
+	position: absolute;
+	min-width: 300px;
+	z-index: 5;
 }
 
-        };
-        const noteNumStyle = {
-            display: this.state.shown ? "none" : "inline-block",
-            zIndex: 4,
-            position: "relative",
-            color: "blue",
-            fontWeight: "bold",
-            cursor: "pointer",
-            
-            // Superscript 
-            verticalAlign: "super",
-            fontSize: "0.5em" 
-        };
-
+.note:onclick .notetext {
+	display: block;
+}
 
 */
 
