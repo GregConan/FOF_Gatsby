@@ -19,6 +19,7 @@ class Dropdown extends Component {
   // Track whether the pointer is above this Dropdown element
   changePointer = (e) => { this.setState({mouseIn: !this.state.mouseIn}) }
 
+  /*
   // Hide this Dropdown menu if user clicks outside of it
   componentWillMount() {
       document.addEventListener('mousedown', this.handleClick, false);
@@ -26,11 +27,13 @@ class Dropdown extends Component {
   componentWillUnmount() {
       document.removeEventListener('mousedown', this.handleClick, false);
   }
+  */
   handleClick = (e) => {
     this.setState({shown: this.state.mouseIn});
   }
 
   render() { 
+      
     const buttonStyle = {
         display: this.state.shown ? "none" : "flex",
         zIndex: 4,
@@ -55,6 +58,7 @@ class Dropdown extends Component {
         <span onClick={this.onClicked} 
           onPointerEnter={this.changePointer}
           onPointerLeave={this.changePointer}
+          onBlur={this.handleClick}
         >
             <button style={buttonStyle}>
                 {this.props.text}
