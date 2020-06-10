@@ -16,6 +16,7 @@ class Dropdown extends Component {
     // Track whether the pointer is above this Dropdown element
     pointerIn = (e) => {
         // console.log("pointer in, touch=" + this.state.touch);
+        this.setState({pointerIn: true});
         if (!this.state.touch) {
             this.setState({shown: true});
         }
@@ -23,6 +24,7 @@ class Dropdown extends Component {
 
     pointerOut = (e) => {
         // console.log("pointer out, touch=" + this.state.touch);
+        this.setState({pointerIn: false});
         if (!this.state.touch) {
             this.setState({shown: false});
         }
@@ -31,7 +33,13 @@ class Dropdown extends Component {
     // Show dropdown when user touches button
     onClicked = (e) => {
         if (this.state.touch) {
-            this.setState({shown: !this.state.shown});
+            if (this.state.shown) {
+                if (this.state.pointerIn) {
+                    this.setState({shown: false}); // !this.state.shown});
+                }
+            } else {
+                this.setState({shown: true})
+            }
         }
     }
 
@@ -77,7 +85,7 @@ class Dropdown extends Component {
             onPointerLeave={this.pointerOut}
             // onBlur={this.handleClick}
             // onFocus={this.handleClick}
-            onClick={this.handleClick}
+            // onClick={this.handleClick}
             onTouchEnd={this.handleTouch}
             >
                 <button style={buttonStyle} onClick={this.onClicked}>
