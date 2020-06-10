@@ -102,8 +102,8 @@ class Dropdown extends Component {
             <span
             onPointerEnter={this.pointerIn}
             onPointerLeave={this.pointerOut}
-            onBlur={this.handleClick}
-            onFocus={this.handleClick}
+            // onBlur={this.handleClick}
+            // onFocus={this.handleClick}
             onClick={this.handleClick}
             onTouchEnd={this.handleTouch}
             >
