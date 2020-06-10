@@ -30,32 +30,31 @@ const RelativeTime = () => (
         <br /><br />
         The chart below summarizes the difference between the two theories:
         <table>
-            <tr>
-                <th></th>
-                <th>A-Theory</th>
-                <th>B-Theory</th>
-            </tr>
-            <tr>
-                <td>The flow of time from past to future is</td>
-                <td>objectively real</td>
-                <td>a subjective illusion</td>
-            </tr>
-            <tr>
-                <td>The universe is actually</td>
-                <td>dynamic, ever-changing</td>
-                <td>static, never changing</td>
-            </tr>
-            <tr>
-                <td>Space and time are</td>
-                <td>totally different things</td>
-                <td>parts of one thing, "spacetime"</td>
-            </tr>
-            <tr>
-                <td>Verb tense ("it happened" vs. "it will happen") is</td>
-                <td>an objective fact</td>
-                <td>only true relative to a perspective</td>
-            </tr>
-
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>A-Theory</th>
+                    <th>B-Theory</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td>The flow of time from past to future is</td>
+                    <td>objectively real</td>
+                    <td>a subjective illusion</td>
+                </tr><tr>
+                    <td>The universe is actually</td>
+                    <td>dynamic, ever-changing</td>
+                    <td>static, never changing</td>
+                </tr><tr>
+                    <td>Space and time are</td>
+                    <td>totally different things</td>
+                    <td>parts of one thing, "spacetime"</td>
+                </tr><tr>
+                    <td>Verb tense ("it happened" vs. "it will happen") is</td>
+                    <td>an objective fact</td>
+                    <td>only true relative to a perspective</td>
+                </tr>
+            </tbody>
         </table>
 
     </Section>
@@ -74,7 +73,7 @@ const RelativeTime = () => (
     <Section num={++sections} summary="Einstein's theory of relativity shows that the present moment ('now') cannot be defined objectively and is instead relative, in the same way as 'here' is for space. But if the present moment is relative, then the only possible theory of time is eternalist B-theory.">	
         According to the theory of relativity, the speed of light is constant. So if one observer moves towards a light source and away from another, then the light coming from in front of them will take less time to reach them than any light coming from behind them. The light from in front of them would reach them earlier than light from behind them — even if another observer sees both sources release light at the same time. Events that one person observes as occurring simultaneously in the present can be observed by another person as happening sequentially, such that some of them happen in the past. This phenomenon is called the "<Hyperlink to="https://en.wikipedia.org/wiki/Relativity_of_simultaneity">relativity of simultaneity."</Hyperlink> Wikipedia's entry on it includes an "<Hyperlink to="https://en.wikipedia.org/wiki/Relativity_of_simultaneity#/media/File:Relativity_of_Simultaneity_Animation.gif">animation illustrating the relativity of simultaneity</Hyperlink>," which shows how it allows the temporal order of events to change based on one's velocity:
         <br /><br />
-        <img class="aligncenter" src="https://media1.giphy.com/media/PrlkxgXrQpn3i/giphy.gif" alt="events occur GIF" />
+        <img className="aligncenter" src="https://media1.giphy.com/media/PrlkxgXrQpn3i/giphy.gif" alt="events occur GIF" />
         <blockquote>"The three events (A, B, C) are simultaneous from the reference frame of an observer moving at <em>v</em> = 0. From the reference frame of an observer moving at <em>v</em> = 0.3<em>c</em>, the events appear to occur in the order C, B, A. From the reference frame of an observer moving at <em>v</em> = -0.5<em>c</em>, the events appear to occur in the order A, B, C. The white line represents a <em>plane of simultaneity</em> being moved from the past of the observer to the future of the observer, highlighting events residing on it. The gray area is the light cone of the observer."</blockquote>
         Unfortunately for the presentist, the <Hyperlink to="https://youtu.be/crk0KAnp5FQ?t=1m50s">relativity of simultaneity directly contradicts presentism</Hyperlink>, as TheMessianicManic explained (although he said "A-theory" when he should have said "presentism"):
         <br /><br />

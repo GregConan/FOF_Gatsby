@@ -42,7 +42,7 @@ class Note extends Component {
             <span onClick={this.toggleShown}
             >
                 <span style={noteNumStyle}
-                 className="note"
+                      className="note"
                 >&nbsp;[{this.props.num}]</span>
                 
                 <span style={noteStyle}>
