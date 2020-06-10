@@ -34,6 +34,7 @@ class Dropdown extends Component {
     startedTouching = (e) => {
         this.setState({touch: true})
         this.setState({touchingNow: true})
+        alert(e.touches)
     }
 
     doneTouching = (e) => {
