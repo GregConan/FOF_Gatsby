@@ -13,47 +13,25 @@ class Dropdown extends Component {
         };
     }
 
-    /*
-    componentDidMount() {
-        if (typeof window !== undefined) {
-            window.addEventListener("touchstart", this.setState({touch: true}))
-        }
-    }
-
-    // Hide this Dropdown menu if user clicks outside of it
-    componentWillMount() {
-        document.addEventListener('mousedown', this.handleClick, false);
-    }
-    componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClick, false);
-    }
-
-    toggleShown() {
-        this.setState({shown: !this.state.shown});
-    }
-    
-    // Show dropdown when user clicks button
-    onClicked = (e) => { this.show() }
-
-    onBlur = (e) => {
-        if (this.state.touch) {
-            this.hide()
-        }
-    }
-    */
-
     // Track whether the pointer is above this Dropdown element
     pointerIn = (e) => {
         // console.log("pointer in, touch=" + this.state.touch);
         if (!this.state.touch) {
-            this.show();
+            this.setState({shown: true});
         }
     }
 
     pointerOut = (e) => {
         // console.log("pointer out, touch=" + this.state.touch);
         if (!this.state.touch) {
-            this.hide();
+            this.setState({shown: false});
+        }
+    }
+
+    // Show dropdown when user touches button
+    onClicked = (e) => {
+        if (this.state.touch) {
+            this.setState({shown: !this.state.shown});
         }
     }
 
@@ -63,17 +41,12 @@ class Dropdown extends Component {
 
     handleTouch = (e) => {
         this.setState({touch: true})
+        /*
+        this.setState({shown: this.state.pointerIn})
         if (this.state.pointerIn) {
             this.setState({shown: !this.state.shown});
         }
-    }
-    
-    hide() {
-        this.setState({shown: false});
-    }
-
-    show() {
-        this.setState({shown: true});
+        */
     }
 
     render() { 
@@ -117,5 +90,40 @@ class Dropdown extends Component {
         )
     }
 }
+
+/*
+    componentDidMount() {
+        if (typeof window !== undefined) {
+            window.addEventListener("touchstart", this.setState({touch: true}))
+        }
+    }
+
+    // Hide this Dropdown menu if user clicks outside of it
+    componentWillMount() {
+        document.addEventListener('mousedown', this.handleClick, false);
+    }
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClick, false);
+    }
+
+    toggleShown() {
+        this.setState({shown: !this.state.shown});
+    }
+        
+    hide() {
+        this.setState({shown: false});
+    }
+
+    show() {
+        this.setState({shown: true});
+    }
+    
+
+    onBlur = (e) => {
+        if (this.state.touch) {
+            this.hide()
+        }
+    }
+*/
 
 export default Dropdown;
