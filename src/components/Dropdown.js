@@ -32,15 +32,23 @@ class Dropdown extends Component {
     }
 
     startedTouching = (e) => {
-        this.setState({touch: true})
-        this.setState({touchingNow: true})
-        alert(e.touches)
+        touches = e.changedTouches
+        var i = 0
+        while (i < touches.length) {
+            if (this == touches.item(i)) {
+                this.setState({touch: true})
+                this.setState({touchingNow: true})
+                this.setState({shown: !this.state.shown})
+                i = touches.length;
+            } else {
+                i++;
+            }
+        }
     }
 
     doneTouching = (e) => {
         this.setState({touch: true})
         if (this.state.touchingNow) {
-            this.setState({shown: !this.state.shown})
             this.setState({touchingNow: false})
         }
     }
