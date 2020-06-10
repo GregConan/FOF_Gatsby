@@ -9,7 +9,8 @@ class Dropdown extends Component {
         this.state = {
             shown: false,
             pointerIn: false,
-            touch: false
+            touch: false,
+            touchingNow: false
         };
     }
 
@@ -30,16 +31,16 @@ class Dropdown extends Component {
         }
     }
 
-    // Show dropdown when user touches button
-    onClicked = (e) => {
-        if (this.state.touch) {
-            if (this.state.shown) {
-                if (this.state.pointerIn) {
-                    this.setState({shown: false}); // !this.state.shown});
-                }
-            } else {
-                this.setState({shown: true})
-            }
+    startedTouching = (e) => {
+        this.setState({touch: true})
+        this.setState({touchingNow: true})
+    }
+
+    doneTouching = (e) => {
+        this.setState({touch: true})
+        if (this.state.touchingNow) {
+            this.setState({shown: !this.state.shown})
+            this.setState({touchingNow: false})
         }
     }
 
@@ -48,7 +49,6 @@ class Dropdown extends Component {
     }
 
     handleTouch = (e) => {
-        this.setState({touch: true})
         /*
         this.setState({shown: this.state.pointerIn})
         if (this.state.pointerIn) {
@@ -86,7 +86,8 @@ class Dropdown extends Component {
             // onBlur={this.handleClick}
             // onFocus={this.handleClick}
             // onClick={this.handleClick}
-            onTouchEnd={this.handleTouch}
+            onTouchStart={this.startedTouching}
+            onTouchEnd={this.doneTouching}
             >
                 <button style={buttonStyle} onClick={this.onClicked}>
                     {this.props.text}
@@ -100,6 +101,19 @@ class Dropdown extends Component {
 }
 
 /*
+    // Show dropdown when user touches button
+    onClicked = (e) => {
+        if (this.state.touch) {
+            if (this.state.shown) {
+                if (this.state.pointerIn) {
+                    this.setState({shown: false}); // !this.state.shown});
+                }
+            } else {
+                this.setState({shown: true})
+            }
+        }
+    }
+
     componentDidMount() {
         if (typeof window !== undefined) {
             window.addEventListener("touchstart", this.setState({touch: true}))
