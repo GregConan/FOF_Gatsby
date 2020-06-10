@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Dropdown from "./Dropdown"
+import Clickdown from "./Clickdown"
 
 class DropdownMenu extends Component {
   render() {
     return (<div style={{height: "100%", width: "100%"}}>
-      <Dropdown text={this.props.title} style={{
+      <Clickdown text={this.props.title} style={{
           display: "flex", wordWrap: "break-word"
       }}>
         <table>
@@ -18,7 +18,7 @@ class DropdownMenu extends Component {
             {this.props.children}
           </tbody>
         </table>
-      </Dropdown>
+      </Clickdown>
     </div>);
   }
 }
