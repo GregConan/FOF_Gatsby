@@ -34,6 +34,12 @@ class Dropdown extends Component {
     
     // Show dropdown when user clicks button
     onClicked = (e) => { this.show() }
+
+    onBlur = (e) => {
+        if (this.state.touch) {
+            this.hide()
+        }
+    }
     */
 
     // Track whether the pointer is above this Dropdown element
@@ -68,12 +74,6 @@ class Dropdown extends Component {
 
     show() {
         this.setState({shown: true});
-    }
-
-    onBlur = (e) => {
-        if (this.state.touch) {
-            this.hide()
-        }
     }
 
     render() { 
