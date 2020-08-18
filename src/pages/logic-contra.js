@@ -14,6 +14,10 @@ var sections = 0;
 const LogicContra = () => (
   <Layout>
     <SEO title="Logical Contradictions" />
+	<script>
+		{notes = 0}
+		{sections = 0}
+	</script>
 		<blockquote>"<em>[N]o one would expect to have a rational conversation with someone who spoke in contradictory statements. If Logical Absolutes are not always true, then it might be true that something can contradict itself, which would make truth unknowable and rational discourse impossible</em>."
 		<br />
 		—<Hyperlink to="https://carm.org/atheism/transcendental-argument">Christian apologist Matt Slick</Hyperlink></blockquote>

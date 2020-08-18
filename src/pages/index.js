@@ -23,7 +23,8 @@ function render() {
 			{sections = 0}
 		</script>    
 		<blockquote><em>"All we can do is to follow the truth and not fight against it."</em>
-		<br />—2 Corinthians 13:8 (CEV)</blockquote>
+		</blockquote>
+		—2 Corinthians 13:8 (CEV)<br /><br />
 		This website is a work-in-progress counter-apologetics resource. Its intent is to provide a factually accurate, logically coherent, and intellectually honest set of arguments that fundamental Christian doctrine as defined in the <Hyperlink to="https://www.crcna.org/welcome/beliefs/creeds">traditional</Hyperlink> <Hyperlink to="https://els.org/beliefs/the-three-ecumenical-creeds-2/">Christian creeds</Hyperlink> should not be believed. In this document, I have sought to address every pro-Christian argument that I have ever encountered.
 		<br /><br />
 		For each argument that I have found in Christian apologetics, I have tried to find the best response using the ideas and terms of analytic philosophy. Each argument will have its own section in the "Application" section of the table below when this website is complete. The "Basis" section will contain all of the necessary underlying philosophical groundwork to justify the arguments I make in the "Application" section.
@@ -109,7 +110,11 @@ function render() {
 							<td><MenuButton text="Alvin Plantinga" to="./ont-plantinga" /></td>
 						</tr>
 					</DropdownMenu></td>
-				<td></td>
+				<td><DropdownMenu title="Theodicy and the Problems of Evil" col1="Objection Basis" col2="Arguments">
+						<td></td>
+						<td><MenuButton text="Divine Hiddenness" to="./theodicy-hidden" /></td>
+					</DropdownMenu>
+				</td>
 				<td></td>
 			</tr><tr>
 				<td></td>

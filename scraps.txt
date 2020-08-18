@@ -1,4 +1,307 @@
+2020-08-10
 
+
+    demographics = get_group_demographics(cli_args, 1,
+                                          GP_DEMO_FILE.format(1), parser)
+
+
+ # GP_DEMO_FILE.format(2), 
+
+
+            # print(column, tracename, full_df.iloc[correls_grouped[uniq]])
+
+
+        if not (i+1) % count_digits_of(i+1):
+
+
+def validate_matrix_paths(all_IDs, paths):
+    """
+    Validate all paths in .conc files
+    :param all_IDs:
+    :return: Tuple of 2 objects: all_IDs and paths
+    """
+    for i in range(len(paths[1])):
+    
+        # Ensure that both matrix file path lists have the same subjects
+        id1 = get_subject_id_from(paths[1][i])
+        id2 = get_subject_id_from(paths[2][i])
+        if id1 == id2:
+            all_IDs.append(id1)
+        else:
+            raise ValueError(MATCH_ERR.format(i, CONC_1, id1, CONC_2, id2))
+            
+        # Ensure that both matrix file path lists point to real files
+        for j in (1, 2):
+            if not os.path.exists(paths[j][i]):
+                paths[j][i] = rename_exacloud_path(os.path.join(PATH_RUSH, 
+                                                                paths[j][i]))
+            assert os.path.exists(paths[j][i])
+
+    return all_IDs, paths
+                    
+    
+            # total = count_val_in_col(full_df, column, uniq)
+
+
+        box_plot.write_html(os.path.join(
+            cli_args.output, "{}_by_demo.html".format(column)
+        ))
+
+
+        bar_plot.write_html(os.path.join(
+            cli_args.output, "{}_by_outlier.html".format(column)
+        ))
+
+
+
+2020-08-07
+
+
+                    text=["{}={}: {:.2%}".format(column,
+                          DATA_VALUES[column][uniq], x) for x in bar_y_vals]
+
+
+        print("95th percentile: {}".format(np.percentile(full_df["Correlation"], 95)))
+        print("5th percentile: {}".format(np.percentile(full_df["Correlation"], 5)))
+
+
+        print("Hi len: {} Lo len: {}".format(len(outliers_hi), ))
+
+
+        # cond = full_df.index.isin(outliers_hi.index)
+        # indices_to_drop = 
+
+
+        # print(med_range.describe())
+        # med_range = full_df.drop(outliers_hi.index).drop(outliers_lo.index)
+        # med_range = full_df.loc[~full_df[SUBJ_ID_COL].isin(outliers_lo[SUBJ_ID_COL])]
+        # med_range = med_range.loc[~med_range[SUBJ_ID_COL].isin(outliers_hi[SUBJ_ID_COL])]
+
+        
+        def remove_df_from_df(to_remove, remove_from):
+            return pd.merge(to_remove, remove_from, on)
+
+
+        print("95th percentile: {}".format(np.percentile(full_df["Correlation"], 95)))
+        print("5th percentile: {}".format(np.percentile(full_df["Correlation"], 5)))
+
+
+        # full_df_correls = full_df["Correlation"].dropna()
+
+
+                print("total for {} in {}: {}".format(uniq, column, total),
+                      end=", ")
+
+
+        print("95th percentile: {}".format(np.percentile(full_df["Correlation"].dropna(), 0.95)))
+        with warnings.catch_warnings():  # Ignore RuntimeWarning from N/As
+            warnings.simplefilter("ignore")
+
+
+        print(len(outliers_lo), len(outliers_hi))
+
+
+        # normal_range = normal_range[~outliers_lo]
+        print(len(med_range))
+        sys.exit()
+
+
+                print("New y_max is {}".format(y_max))
+
+
+    "demo_prnt_ed_v2b": {
+        0: "None/Kindergarden", 1: "1st grade", 2: "2nd grade", 3: "3rd grade",
+        **{x: "{}th grade".format(x) for x in range(4, 13)}, 
+        13: "High School Graduate"
+    }
+
+
+                # to_graph[column][uniq] = 
+
+
+            print("All min: {} All max: {}".format(
+                
+            ))
+
+
+
+2020-08-06
+
+            
+            sys.exit()
+            to_graph[column] = pd.DataFrame(to_graph[column])
+            fig = px.box(to_graph[column], y="Correlation")
+            fig.show()
+
+            print(grouped)
+            to_graph["Min"] = grouped["Correlation"].min()
+            to_graph["Max"] = grouped["Correlation"].max()
+
+            # to_graph[column] = pd.DataFrame(grouped["Correlation"].groups)
+            # print(grouped["Correlation"].groups)
+            print(to_graph[column]) # .agg(["min", "max", "mean"]))
+            # for each_bin in full_df[column].unique():
+            
+
+            to_graph[column] = dict()
+            to_graph[column] = full_df.groupby([column]).groups
+            for x in to_graph[column].keys():
+                to_graph[column][str(x)] = to_graph[column].pop(x)
+            print(to_graph[column].keys())
+
+            fig.add_trace(go.Box(
+                to_graph[column]
+            ))
+            fig.write_html(os.path.join(
+                cli_args.output, "{}.html".format("test")
+            ))
+            
+            
+    # Get the name of the correlations file
+    if cli_args.only_make_graphs:
+        setattr(cli_args, "correl_file", input(
+            "What is the base name and extension of your correlations file?"
+        ))
+
+
+    basename = cli_args.correls_csv
+    filepath = os.path.join(cli_args.output, basename)
+
+
+    def correls_csv():
+        parser.add_argument(
+            "-correls", "--correls-csv",
+            type=lambda x: os.path.splitext(x)[-1] == ".csv",
+            default=("Path to .csv file with correlation values between two "
+                     "connectivity matrices for each subject.")
+        )
+
+
+basename = os.path.splitext("_to_".join((
+        os.path.basename(getattr(cli_args, GP_MTR_FILE.format(1))),
+        os.path.basename(getattr(cli_args, GP_MTR_FILE.format(2)))
+    )))[0] + ".csv"
+
+
+    # correls = dict() # [None] * num_subjs  # Return value: Correlations list
+
+
+ # s[all_IDs[i]]))
+
+
+ # correls[all_IDs[i]] = corr_fn(mx_pair[1], mx_pair[2])
+
+
+    # return correls
+
+
+def save_into_csv(out_dir, correls, fname="correlations.csv"):
+    to_write = ["{},{}".format(subjid, correls[subjid]) for subjid in correls.keys()]
+    with open(os.path.join(out_dir, fname), "w+") as outfile:
+        outfile.write("Subject ID,Correlation\n" + "\n".join(to_write))
+
+
+    matrices = [running_total.copy()] 
+
+
+    # Save all correlations into a .csv file
+    # save_into_csv(cli_args.output, all_correls)
+
+
+
+2020-08-05
+
+    correls = dict() # [None] * num_subjs  # Return value: List of correlations
+
+
+        print("{} is {}".format(get_subject_id_from(matrix_paths[1][i]),
+                                get_subject_id_from(matrix_paths[2][i])))
+
+
+
+2020-07-31
+
+
+        const textStyle = addPositioning({
+            display: this.state.shown ? "block" : "none",
+        });
+        const textAreaID = this.props.id + this.props.num.toString();
+        console.log(textAreaID)
+
+        return (
+        <div>
+            <a id={this.props.id} // style={containerStyle} onClick={this.toggleShown}
+             dataToggle="collapse" href={"#" + textAreaID} role="button"
+             className="btn btn-primary"> 
+                <p>{this.props.num}. {this.props.summary}</p>
+            </a>
+            <div id={textAreaID} className="collapse" // style={textStyle}
+             >
+                <div class="card card-body">
+                    {this.props.children}
+                </div>
+            </div>
+        </div>     
+
+
+    function toggleShown(idToToggle) {
+        jQuery("#" + idToToggle).toggle();
+    }
+
+
+    <!-- React framework for more efficient component modularization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js" charset="utf-8"></script>
+    <script type="text/babel">
+      class FileInput extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return <p id="texttest">Test</p>
+        }
+      }
+    </script>
+
+
+      <script type="text/babel">
+        ReactDOM.render(<FileInput />, document.getElementById("texttest"))
+      </script>
+
+
+            <p>Group 2 Data file</p>
+            <div class="file-upload-wrapper">
+              <input type="file" id="input-file-now" class="file-upload" onchange="validateFile(this.value, '.mat');"/>
+            </div>
+
+            <br />
+
+            <p data-toggle="tooltip" title="The name of the variable within group 2's matrix (.mat) file. This should represent a 2D matrix">
+              Group 2 Data Variable Name:</p>
+            <input type="text" class="form-control" placeholder="Variable Name">  
+
+
+      <br />
+
+      <p data-toggle="tooltip" title=".mat file where group 1's data is located" style="float: left;">
+        Group 1 Data File: 
+      <div class="file-upload-wrapper col">
+        <input type="file" id="input-file-now" class="file-upload" onchange="validateFile(this.value, '.mat');" style="float: left;" />
+      </div></p>
+
+
+2020-07-30
+
+    // Inserts ins_string into main_string at position pos
+    function splice(main_string, ins_string, pos) {
+        function ifUndefined(theVar, setTo) {
+            return (typeof(theVar) === undefined) ? setTo : theVar;
+        }
+        ins_string = ifUndefined(ins_string, '');
+        pos = ifUndefined(pos, 0);
+        return main_string.slice(0, pos) + ins_string + main_string.slice(pos);
+    }
 
         
         return ( 
